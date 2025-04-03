@@ -1,0 +1,140 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Fondo oscuro para resaltar colores vibrantes */
+    color: #fff; /* Texto blanco para buen contraste */
+}
+
+/* Encabezado (header) */
+header {
+    background-color: #f57c00; /* Naranja vibrante como el traje de Goku */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #03a9f4; /* Azul celeste (color Super Saiyan Blue) */
+}
+
+/* Secciones */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+section#inicio {
+    background-color: #424242; /* Gris oscuro */
+}
+
+section#personajes {
+    background-color: #212121; /* Fondo casi negro para resaltar los personajes */
+    color: #ffeb3b; /* Amarillo dorado para destacar */
+}
+
+section#historia {
+    background-color: #1c1c1c;
+    color: #ff9800; /* Naranja más suave */
+}
+
+/* Estilos de los personajes */
+.personajes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.personaje {
+    background-color: #f57c00; /* Naranja como Goku */
+    border-radius: 14px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+.personaje:hover {
+    transform: scale(1.05); /* Animación al pasar el ratón por encima */
+}
+
+.personaje img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    border: 3px solid #ffeb3b; /* Borde dorado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+}
+
+.personaje h3 {
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de la historia */
+section#historia p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000; /* Fondo negro puro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    font-size: 1.5em;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .personajes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personaje {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
